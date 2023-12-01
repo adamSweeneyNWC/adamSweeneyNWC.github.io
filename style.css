@@ -1,0 +1,19 @@
+body{
+  background-color:#F3E9D2;
+  padding: 0;
+  margin: 0;
+} 
+
+.top-panel {
+  background-color: #88D498;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+}
+
+h2 {
+  text-align: right;
+  margin: 10px 15px;
+  list-style-type: none;
+}
