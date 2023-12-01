@@ -12,6 +12,11 @@ body{
   margin: 0px;
 }
 
+title {
+  text-align: center;
+  color: #420217; 
+}
+
 h2 {
   text-align: right;
   margin: 10px 15px;
