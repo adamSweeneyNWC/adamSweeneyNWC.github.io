@@ -32,3 +32,20 @@ h2 {
   font-size: 25px;
   border: 4mm ridge rgba(211, 220, 50, 0.6);
 }
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 40%;
+  border: 4mm ridge rgba(211, 220, 50, 0.6);
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    trainsform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
