@@ -41,6 +41,12 @@ img {
   animation: spin 5s linear infinite;
 }
 
+
+canvas {
+  border: 1px solid grey;
+  margin: 0px
+}
+
 @keyframes spin {
   from {
     trainsform: rotate(0deg);
