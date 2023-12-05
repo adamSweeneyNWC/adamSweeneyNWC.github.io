@@ -1,9 +1,10 @@
+/* Background format */
 body{
   background-color:#F3E9D2;
   padding: 0;
   margin: 0;
 } 
-
+/* Top Panel Format */
 .top-panel {
   background-color: #88D498;
   height: 50px;
@@ -11,28 +12,29 @@ body{
   padding: 10px;
   margin: 0px;
 }
-
+/* Title format */
 title {
   text-align: center;
   color: #420217; 
 }
-
+/* Heading Format */
 h2 {
   text-align: right;
   margin: 10px 15px;
   list-style-type: none;
 }
-
+/* Create flexbox */
 .flexbox-container {
   display: flex;
 }
+/* Formatting the flexbox */
 .flexbox-item {
   margin: 10px;
   flex-grow: 1;
   font-size: 25px;
   border: 4mm ridge rgba(211, 220, 50, 0.6);
 }
-
+/* Formatting the image and adding an animation */
 img {
   width: 200px;
   height: 200px;
@@ -41,7 +43,7 @@ img {
   animation: spin 5s linear infinite;
 }
 
-
+/* Formatting the canvas */
 canvas {
   border: 1px solid grey;
   margin: 0px;
@@ -49,6 +51,7 @@ canvas {
   height: 400px;
 }
 
+/* Creating the animation itself */
 @keyframes spin {
   from {
     trainsform: rotate(0deg);
