@@ -29,7 +29,6 @@ h2 {
 }
 /* Formatting the flexbox */
 .flexbox-item {
-  align-items: center;
   flex-grow: 1;
   font-size: 25px;
   border: 4mm ridge rgba(211, 220, 50, 0.6);
