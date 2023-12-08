@@ -59,29 +59,26 @@ canvas {
   width: 100%;
   height: 400px;
 }
-/* Survey Formatting */
+
 .Survey{
   
 }
-
-/* Making Flexboxes of different colors for the fun images */
 .flexbox-item-1 {
-  
   color: #d106d1;
   max-height: 200px;
-  max-width: 210px;
+  min-width: 210px;
   border: 4mm ridge rgba(83, 23, 200, 0.6);
 }
 .flexbox-item-2 {
   color: #d106d1;
-  max-width: 200px;
+  min-width: 200px;
   max-height: 200px;
   border: 4mm ridge rgba(200, 230, 2, 0.6);
 
 }
 .flexbox-item-3 {
   color: #d106d1;
-  max-width: 220px;
+  min-width: 220px;
   max-height: 200px;
   border: 4mm ridge rgba(50, 100, 230, 0.6);
 }
