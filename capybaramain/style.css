@@ -5,13 +5,13 @@ body{
   margin: 0;
 } 
 /* Top Panel Format */
-.top-panel {
+/* .top-panel {
   background-color: #88D498;
   height: 50px;
   width: 100%;
   padding: 10px;
   margin: 0px;
-}
+} */
 /* Title format */
 title {
   text-align: center;
@@ -87,4 +87,13 @@ canvas {
   max-width: 250px;
   max-height: 200px;
   border: 4mm ridge rgba(230, 50, 50, 0.6);
+}
+
+.flexbox-item-5{
+  background-color: #88D498;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  font-size: 20px;
 }
