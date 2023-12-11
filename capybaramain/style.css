@@ -4,19 +4,7 @@ body{
   padding: 0;
   margin: 0;
 } 
-/* Top Panel Format */
-/* .top-panel {
-  background-color: #88D498;
-  height: 50px;
-  width: 100%;
-  padding: 10px;
-  margin: 0px;
-} */
-/* Title format */
-title {
-  text-align: center;
-  color: #420217; 
-}
+
 /* Heading Format */
 h2 {
   text-align: right;
