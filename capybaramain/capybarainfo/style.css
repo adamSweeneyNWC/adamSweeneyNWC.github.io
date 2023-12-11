@@ -1,1 +1,31 @@
+/* Background format */
+body{
+  background-color:#F3E9D2;
+  padding: 0;
+  margin: 0;
+} 
 
+title {
+  text-align: center;
+  color: #420217; 
+}
+
+/* Create flexbox */
+.flexbox-container {
+  display: flex;
+}
+/* Formatting the flexbox */
+.flexbox-item {
+  flex-grow: 1;
+  font-size: 25px;
+  border: 4mm ridge rgba(211, 220, 50, 0.6);
+}
+
+.flexbox-item-5{
+  background-color: #88D498;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  font-size: 20px;
+}
