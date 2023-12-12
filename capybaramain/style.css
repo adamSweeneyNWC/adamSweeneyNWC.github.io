@@ -85,3 +85,13 @@ canvas {
   margin: 0px;
   font-size: 20px;
 }
+
+
+.flexbox-item-6{
+  background-color: #88D498;
+  height: 50px;
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+}
