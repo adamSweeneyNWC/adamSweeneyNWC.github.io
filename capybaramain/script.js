@@ -135,6 +135,26 @@ function splash(x, y) {
   ctx.fill();
 }
 
+
+// let a = 0 ;
+// let b = 0 ;
+// let numA = 1;
+// let numB = 1;
+
+// function splashAni() {
+//   if (space){
+//     a+= numA;
+//     b+= numB;
+//     splash(a, b)
+//     if (a >= 15 || a <= -10) {
+//       numA *= -1;
+//     }
+//     if (b >= 15 || b <= -10) {
+//       numB *= -1;
+//     }
+//   }else splash(a, b)
+// }
+
 let a = 0 ;
 let numA = 0.5;
 
