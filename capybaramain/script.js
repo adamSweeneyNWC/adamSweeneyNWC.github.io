@@ -4,20 +4,22 @@ const ctx = canvas.getContext("2d");
 canvas.width = 600;
 canvas.height = 400;
 
-//___________________ background ___________________
+//___________________ background draw ___________________
 
 function background() {
-  //water
+  
+  // water gradient, light blue to dark
   const grd = ctx.createLinearGradient(300, 90, 300, 290);
   grd.addColorStop(0, "#9ed9c9");
   grd.addColorStop(1, "#6db0af");
+  // water
   ctx.fillStyle = grd;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+  //land gradient, light green to dark (left to right)
     const grd2 = ctx.createLinearGradient(100, 150, 700, 150);
   grd2.addColorStop(0, "#81a371");
   grd2.addColorStop(1, "#50824b");
-  
   //land
   ctx.fillStyle = grd2;
   ctx.beginPath();
@@ -28,9 +30,8 @@ function background() {
   ctx.lineTo(canvas.width, 0);
   ctx.fill();
 }
-//flowers draw
 
-// waterfall
+// __________________________ waterfall _____________________________
 //stream
 function stream() {
   const grd1 = ctx.createLinearGradient(300, 90, 300, 290);
@@ -41,7 +42,7 @@ function stream() {
   ctx.fillRect(290, 0, 70, 170);
 }
 
-//drawing the waters shadow
+//drawing waters shadow or drops 
 function waterShadowTxtr(x, y) {
   ctx.fillStyle = "#4a798a";
   ctx.beginPath();
@@ -51,6 +52,7 @@ function waterShadowTxtr(x, y) {
   ctx.fill();
 }
 
+// starting y values 
 let y = 0;
 let y1 = 10; 
 let y2 = 20; 
@@ -65,6 +67,7 @@ let y10 = 0;
 let y11 = 120; 
 let y12 = 120; 
 
+// water moving function if space is pressed
 function waterMove() {
   stream();
   if (space){
@@ -119,7 +122,6 @@ function waterMove() {
     waterShadowTxtr(5, y11);
     
   }
-  
 }
 
 
@@ -135,25 +137,6 @@ function splash(x, y) {
   ctx.fill();
 }
 
-
-// let a = 0 ;
-// let b = 0 ;
-// let numA = 1;
-// let numB = 1;
-
-// function splashAni() {
-//   if (space){
-//     a+= numA;
-//     b+= numB;
-//     splash(a, b)
-//     if (a >= 15 || a <= -10) {
-//       numA *= -1;
-//     }
-//     if (b >= 15 || b <= -10) {
-//       numB *= -1;
-//     }
-//   }else splash(a, b)
-// }
 
 let a = 0 ;
 let numA = 0.5;
