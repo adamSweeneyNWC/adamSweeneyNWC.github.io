@@ -92,7 +92,16 @@ canvas:hover {
 
 .flexbox-item-6{
   background-color: #88D498;
-  height: 50px;
+  height: 40px;
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.flexbox-item-6:hover{
+  background-color: #61ab76;
+  height: 40px;
   width: 20%;
   padding: 10px;
   margin: 10px;
