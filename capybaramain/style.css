@@ -46,6 +46,11 @@ canvas {
   margin: 20px;
 }
 
+canvas:hover {
+  border: 3px solid #61ab76;
+  margin: 20px;  
+}
+
 .Survey{
   
 }
