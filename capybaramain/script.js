@@ -70,7 +70,7 @@ let y12 = 120;
 // water moving function if space is pressed
 function waterMove() {
   stream();
-  if (space){
+  if (right){
     y+= 1;
     y1+= 1;
     y2+= 1;
@@ -142,7 +142,7 @@ let a = 0 ;
 let numA = 0.5;
 
 function splashAni() {
-  if (space){
+  if (right){
     a+= numA;
     splash(a, 0)
     if (a >= 10 || a <= -10) {
@@ -223,26 +223,6 @@ function capybara() {
 //   stream();
 //   waterTxtr(0, 0);
 // }
-
-//___________________get mouse input___________________
-
-let mouse = {
-  down: false,
-  x: 0,
-  y: 0
-};
-canvas.addEventListener("mousemove", (event) => {
-  mouse.x = event.offsetX;
-  mouse.y = event.offsetY;
-});
-canvas.addEventListener("mousedown", (event) => {
-  mouse.down = true;
-  console.log(mouse);
-});
-canvas.addEventListener("mouseup", (event) => {
-  mouse.down = false;
-});
-
 
 // ___________________get keyboard input___________________
 // ⇦73   ⇨39   ⇧38   ⇩40    W87   A65   S83   D68    spacebar32
