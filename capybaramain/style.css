@@ -43,9 +43,7 @@ h2 {
 /* Formatting the canvas */
 canvas {
   border: 1px solid grey;
-  margin: 0px;
-  width: 100%;
-  height: 400px;
+  margin: 20px;
 }
 
 .Survey{
