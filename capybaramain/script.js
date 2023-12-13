@@ -4,22 +4,20 @@ const ctx = canvas.getContext("2d");
 canvas.width = 600;
 canvas.height = 400;
 
-//___________________ background draw ___________________
+//___________________ background ___________________
 
 function background() {
-  
-  // water gradient, light blue to dark
+  //water
   const grd = ctx.createLinearGradient(300, 90, 300, 290);
   grd.addColorStop(0, "#9ed9c9");
   grd.addColorStop(1, "#6db0af");
-  // water
   ctx.fillStyle = grd;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  //land gradient, light green to dark (left to right)
     const grd2 = ctx.createLinearGradient(100, 150, 700, 150);
   grd2.addColorStop(0, "#81a371");
   grd2.addColorStop(1, "#50824b");
+  
   //land
   ctx.fillStyle = grd2;
   ctx.beginPath();
@@ -30,8 +28,9 @@ function background() {
   ctx.lineTo(canvas.width, 0);
   ctx.fill();
 }
+//flowers draw
 
-// __________________________ waterfall _____________________________
+// waterfall
 //stream
 function stream() {
   const grd1 = ctx.createLinearGradient(300, 90, 300, 290);
@@ -42,7 +41,7 @@ function stream() {
   ctx.fillRect(290, 0, 70, 170);
 }
 
-//drawing waters shadow or drops 
+//drawing the waters shadow
 function waterShadowTxtr(x, y) {
   ctx.fillStyle = "#4a798a";
   ctx.beginPath();
@@ -52,7 +51,6 @@ function waterShadowTxtr(x, y) {
   ctx.fill();
 }
 
-// starting y values 
 let y = 0;
 let y1 = 10; 
 let y2 = 20; 
@@ -67,7 +65,6 @@ let y10 = 0;
 let y11 = 120; 
 let y12 = 120; 
 
-// water moving function if space is pressed
 function waterMove() {
   stream();
   if (right){
@@ -122,6 +119,7 @@ function waterMove() {
     waterShadowTxtr(5, y11);
     
   }
+  
 }
 
 
@@ -136,7 +134,6 @@ function splash(x, y) {
   ctx.lineTo(360, 185);
   ctx.fill();
 }
-
 
 let a = 0 ;
 let numA = 0.5;
@@ -223,6 +220,26 @@ function capybara() {
 //   stream();
 //   waterTxtr(0, 0);
 // }
+
+//___________________get mouse input___________________
+
+let mouse = {
+  down: false,
+  x: 0,
+  y: 0
+};
+canvas.addEventListener("mousemove", (event) => {
+  mouse.x = event.offsetX;
+  mouse.y = event.offsetY;
+});
+canvas.addEventListener("mousedown", (event) => {
+  mouse.down = true;
+  console.log(mouse);
+});
+canvas.addEventListener("mouseup", (event) => {
+  mouse.down = false;
+});
+
 
 // ___________________get keyboard input___________________
 // ⇦73   ⇨39   ⇧38   ⇩40    W87   A65   S83   D68    spacebar32
