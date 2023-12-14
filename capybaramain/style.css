@@ -59,24 +59,56 @@ canvas:hover {
   min-width: 210px;
   border: 4mm ridge rgba(83, 23, 200, 0.6);
 }
+
+.flexbox-item-1:hover {
+  color: #d106d1;
+  max-height: 200px;
+  min-width: 210px;
+  border: 4mm ridge rgba(200, 230, 2, 0.6););
+}
+
 .flexbox-item-2 {
   color: #d106d1;
   min-width: 200px;
   max-height: 200px;
   border: 4mm ridge rgba(200, 230, 2, 0.6);
+}
+
+.flexbox-item-2:hover {
+  color: #d106d1;
+  min-width: 200px;
+  max-height: 200px;
+  border: 4mm ridge rgba(230, 50, 50, 0.6);
 
 }
+
 .flexbox-item-3 {
   color: #d106d1;
   min-width: 220px;
   max-height: 200px;
   border: 4mm ridge rgba(50, 100, 230, 0.6);
 }
+
+.flexbox-item-3:hover {
+  color: #d106d1;
+  min-width: 220px;
+  max-height: 200px;
+  border: 4mm ridge rgba(83, 23, 200, 0.6);
+}
+
+
 .flexbox-item-4 {
   color: #d106d1;
   max-width: 250px;
   max-height: 200px;
   border: 4mm ridge rgba(230, 50, 50, 0.6);
+}
+
+.flexbox-item-4:hover {
+  color: #d106d1;
+  max-width: 250px;
+  max-height: 200px;
+  border: 4mm ridge rgba(50, 100, 230, 0.6);
 }
 
 .flexbox-item-5{
