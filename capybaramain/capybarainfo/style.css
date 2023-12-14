@@ -35,3 +35,12 @@ title {
   margin: 0px;
   font-size: 25px;
 }
+
+.flexbox-item-5{
+  background-color: #88D498;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  font-size: 20px;
+}
