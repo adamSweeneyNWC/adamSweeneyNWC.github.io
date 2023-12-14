@@ -5,22 +5,18 @@ body{
   margin: 0;
 } 
 
-/* Heading Format */
-h2 {
-  text-align: right;
-  margin: 10px 15px;
-  list-style-type: none;
-}
 /* Create flexbox */
 .flexbox-container {
   display: flex;
 }
+
 /* Formatting the flexbox */
 .flexbox-item {
   flex-grow: 1;
   font-size: 25px;
   border: 4mm ridge rgba(211, 220, 50, 0.6);
 }
+
 /* Formatting the image and adding an animation */
 .rotate {
   
@@ -47,7 +43,7 @@ canvas {
 }
 
 canvas:hover {
-  border: 3px solid #61ab76;
+  border: 3px solid #ffce3b;
   margin: 20px;  
 }
 
