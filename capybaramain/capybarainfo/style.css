@@ -14,7 +14,7 @@ title {
   text-align: center;
   color: #420217;
   font-size: 30px;
-  background-color: #88D498;
+  background-color: #388D498;
 }
 
 /* Create flexbox */
@@ -31,8 +31,7 @@ title {
 .flexbox-item-7{
   flex-grow: 1;
   background-color: 4mm ridge rgba(211, 220, 50, 0.6);
-  align-items: center;
-  padding: 10px;
+  padding: 5px;
   margin: 20px;
   font-size: 25px;
 }
