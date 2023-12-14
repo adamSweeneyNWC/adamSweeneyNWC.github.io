@@ -10,6 +10,13 @@ title {
   color: #420217; 
 }
 
+.heading {
+  text-align: center;
+  color: #420217;
+  background-color: #388D498;
+  border: 4mm solid #74ad65;
+}
+
 /* Create flexbox */
 .flexbox-container {
   display: flex;
@@ -18,14 +25,14 @@ title {
 .flexbox-item {
   flex-grow: 1;
   font-size: 25px;
-  border: 4mm ridge rgba(211, 220, 50, 0.6);
+  border: 4mm solid rgba(211, 220, 50, 0.6);
 }
 
-.flexbox-item-5{
-  background-color: #88D498;
-  height: 50px;
-  width: 100%;
+.flexbox-item-7{
+  flex-grow: 1;
+  background-color: rgba(211, 220, 50, 0.6);
+  width: 80%;
   padding: 10px;
   margin: 0px;
-  font-size: 20px;
+  font-size: 25px;
 }
