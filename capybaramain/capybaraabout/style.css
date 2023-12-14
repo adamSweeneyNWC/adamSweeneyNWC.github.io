@@ -19,6 +19,8 @@ title {
   flex-grow: 1;
   font-size: 25px;
   border: 4mm ridge rgba(211, 220, 50, 0.6);
+  margin: 20px;
+  padding: 10px;
 }
 
 .flexbox-item-5{
